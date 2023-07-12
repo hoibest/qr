@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="todayQR">
+        
+    </div>
+    <script>
+        let htmlContent = `
+        <table style="border-collapse: collapse; width: 85.6147%; height: 173px;" border="1">
+<tbody>
+<tr style="height: 185px;">
+<td style="width: 6.79447%; background-color: #ebedef; height: 10px;"><strong>Week 1<br></strong></td>
+<td style="width: 19.7691%; height: 10px; text-align: center;">
+<p>Monday 3 July</p>
+<p><img src="https://canvas.sydney.edu.au/courses/47308/files/32171885/preview" alt="image.png" data-api-endpoint="https://canvas.sydney.edu.au/api/v1/courses/47308/files/32171885" data-api-returntype="File"></p>
+</td>
+<td style="width: 26.2818%; height: 10px; text-align: center;">
+<p>Wednesday 5 July<img src="https://canvas.sydney.edu.au/courses/47308/files/32172489/preview" alt="image.png" data-api-endpoint="https://canvas.sydney.edu.au/api/v1/courses/47308/files/32172489" data-api-returntype="File"></p>
+</td>
+<td style="width: 26.1444%; height: 10px; text-align: center;">
+<p>Thursday 6 July</p>
+<p><img src="https://canvas.sydney.edu.au/courses/47308/files/32172686/preview" alt="image.png" data-api-endpoint="https://canvas.sydney.edu.au/api/v1/courses/47308/files/32172686" data-api-returntype="File"></p>
+</td>
+<td style="width: 20.9744%; text-align: center; height: 10px;">
+<p>Friday 7 July</p>
+<p><img src="https://canvas.sydney.edu.au/courses/47308/files/32172689/preview" alt="image.png" data-api-endpoint="https://canvas.sydney.edu.au/api/v1/courses/47308/files/32172689" data-api-returntype="File"></p>
+</td>
+</tr>
+<tr style="height: 45px;">
+<td style="width: 6.79447%; background-color: #ebedef; height: 45px;"><strong>Week 2<br></strong></td>
+<td style="width: 19.7691%; text-align: center; height: 45px;">
+<p>Monday 10 July<img src="https://canvas.sydney.edu.au/courses/47308/files/32172694/preview" alt="image.png" data-api-endpoint="https://canvas.sydney.edu.au/api/v1/courses/47308/files/32172694" data-api-returntype="File"></p>
+</td>
+<td style="width: 26.2818%; text-align: center; height: 45px;">
+<p>Wednesday 12 July<img src="https://canvas.sydney.edu.au/courses/47308/files/32172695/preview" alt="image.png" data-api-endpoint="https://canvas.sydney.edu.au/api/v1/courses/47308/files/32172695" data-api-returntype="File"></p>
+</td>
+<td style="width: 26.1444%; text-align: center; height: 45px;">
+<p>Thursday 13 July</p>
+<p><img src="https://canvas.sydney.edu.au/courses/47308/files/32172700/preview" alt="image.png" data-api-endpoint="https://canvas.sydney.edu.au/api/v1/courses/47308/files/32172700" data-api-returntype="File"></p>
+</td>
+<td style="width: 20.9744%; text-align: center; height: 45px;">
+<p>Friday 14 July</p>
+<p><img src="https://canvas.sydney.edu.au/courses/47308/files/32172701/preview" alt="image.png" data-api-endpoint="https://canvas.sydney.edu.au/api/v1/courses/47308/files/32172701" data-api-returntype="File"></p>
+</td>
+</tr>
+<tr style="height: 197px;">
+<td style="width: 6.79447%; background-color: #ebedef; height: 41px;"><strong>Week 3<br></strong></td>
+<td style="width: 19.7691%; height: 41px; text-align: center;">
+<p>Monday 17 July<img src="https://canvas.sydney.edu.au/courses/47308/files/32172704/preview" alt="image.png" data-api-endpoint="https://canvas.sydney.edu.au/api/v1/courses/47308/files/32172704" data-api-returntype="File"></p>
+</td>
+<td style="width: 26.2818%; height: 41px; text-align: center;">
+<p>Wednesday 19 July</p>
+<p><img src="https://canvas.sydney.edu.au/courses/47308/files/32172707/preview" alt="image.png" data-api-endpoint="https://canvas.sydney.edu.au/api/v1/courses/47308/files/32172707" data-api-returntype="File"></p>
+</td>
+<td style="width: 26.1444%; height: 41px; text-align: center;">
+<p>Thursday 20 July</p>
+<p><img src="https://canvas.sydney.edu.au/courses/47308/files/32172711/preview" alt="image.png" data-api-endpoint="https://canvas.sydney.edu.au/api/v1/courses/47308/files/32172711" data-api-returntype="File"></p>
+</td>
+<td style="width: 20.9744%; text-align: center; height: 41px;">
+<p>Friday 21 July</p>
+<p><img src="https://canvas.sydney.edu.au/courses/47308/files/32172715/preview" alt="image.png" data-api-endpoint="https://canvas.sydney.edu.au/api/v1/courses/47308/files/32172715" data-api-returntype="File"></p>
+</td>
+</tr>
+<tr style="height: 11px;">
+<td style="width: 6.79447%; background-color: #ebedef; height: 26px;"><strong>Week 4<br></strong></td>
+<td style="width: 19.7691%; height: 26px; text-align: center;">
+<p>Monday 24 July<img src="https://canvas.sydney.edu.au/courses/47308/files/32172718/preview" alt="image.png" data-api-endpoint="https://canvas.sydney.edu.au/api/v1/courses/47308/files/32172718" data-api-returntype="File"></p>
+<p>&nbsp;</p>
+</td>
+<td style="width: 26.2818%; height: 26px; text-align: center;">
+<p>Wednesday 26 July<img src="https://canvas.sydney.edu.au/courses/47308/files/32172721/preview" alt="image.png" data-api-endpoint="https://canvas.sydney.edu.au/api/v1/courses/47308/files/32172721" data-api-returntype="File"></p>
+</td>
+<td style="width: 26.1444%; height: 26px; text-align: center;">
+<p>Thursday 27 July</p>
+<p><img src="https://canvas.sydney.edu.au/courses/47308/files/32172723/preview" alt="image.png" data-api-endpoint="https://canvas.sydney.edu.au/api/v1/courses/47308/files/32172723" data-api-returntype="File"></p>
+</td>
+<td style="width: 20.9744%; text-align: center; height: 26px;">
+<p>Friday 28 July</p>
+<p><img src="https://canvas.sydney.edu.au/courses/47308/files/32172727/preview" alt="image.png" data-api-endpoint="https://canvas.sydney.edu.au/api/v1/courses/47308/files/32172727" data-api-returntype="File"></p>
+</td>
+</tr>
+</tbody>
+</table>
+        `
+        const div = document.createElement('div');
+        div.innerHTML = htmlContent;
+        const table = div.querySelector('table');
+
+        const today = new Date();
+        const options = {weekday: 'long', day: 'numeric', month: 'long'};
+        const formattedDate = today.toLocaleDateString('en-US', options).replace(',', '').replace(/(\w+) (\w+).* (\d+)/, '$1 $3 $2');
+
+
+        console.log(div,formattedDate)
+
+        const rows = table.querySelectorAll('tr');
+        const show = document.getElementById('todayQR')
+        let qrCode = null;
+        let hasQR = false;
+
+        rows.forEach(row => {
+            const cells = row.querySelectorAll('td');
+            cells.forEach(cell =>{
+                
+                paragraphs = cell.querySelectorAll('p')
+                console.log(cell)
+                let combinedContent = '';
+                paragraphs.forEach(paragraph => {
+                    
+                    combinedContent += paragraph.textContent.trim();
+                });
+                if (combinedContent === formattedDate){
+                    show.innerHTML = cell.innerHTML;
+                    qrCode = cell.querySelector('img')
+                    qrCode.id = 'qrCodeImage'
+                    hasQR = true;
+                }
+            })
+        })
+
+        if(hasQR === false){
+            show.innerHTML = 'no QR code today'
+        }
+
+
+    </script>
+</body>
+</html>
